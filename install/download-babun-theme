@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wget .oh-my-zsh/themes/babun.zsh-theme https://raw.githubusercontent.com/babun/babun/master/babun-core/plugins/oh-my-zsh/src/babun.zsh-theme
+

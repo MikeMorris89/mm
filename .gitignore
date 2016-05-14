@@ -1,3 +1,29 @@
+
+
+
+
+#zsh
+*~
+.*~
+.zcompdump*
+.zsh_history
+.zsh-update
+
+#bash vim
+.bash_history
+.viminfo
+bin
+.vim/bundle
+
+#keys
+.ssh
+
+#keep these files
+!.oh-my-zsh/themes/babun.zsh-theme
+
+####################################################################
+#windows defaults from github
+#VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
