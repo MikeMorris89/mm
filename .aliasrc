@@ -11,6 +11,6 @@ gall() {
 #bash
 alias c='clear'
 alias ct='~/cmd/clear-tmp'
-
+alias cdgithub='cd /c/github'
 alias cdbase='cd ~/docker/mm-rbase'
 alias cdshiny='cd ~/docker/mm-shiny'
