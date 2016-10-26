@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+
+#git
+gall() {
+	gaa && gcmsg "$@" && gl && gp
+}
+
+
+#bash
+alias c='clear'
+alias ct='~/cmd/clear-tmp'
+
+alias cdbase='cd ~/docker/mm-rbase'
+alias cdshiny='cd ~/docker/mm-shiny'
