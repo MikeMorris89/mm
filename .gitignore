@@ -21,6 +21,12 @@ bin
 #keep these files
 !.oh-my-zsh/themes/babun.zsh-theme
 
+
+####################################################################
+#docker folder. this file structure is for github repos and automaited docker builds
+####################################################################
+docker/
+
 ####################################################################
 #windows defaults from github
 #VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
