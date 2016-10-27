@@ -5,6 +5,9 @@ setlocal spell spelllang=en_us
 
 :ab bb #!/bin/bash
 
+filetype indent on
+
+
 " Spelling
 highlight clear SpellBad
 highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline

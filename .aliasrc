@@ -12,5 +12,11 @@ gall() {
 alias c='clear'
 alias ct='~/cmd/clear-tmp'
 alias cdgithub='cd /c/github'
-alias cdbase='cd ~/docker/mm-rbase'
-alias cdshiny='cd ~/docker/mm-shiny'
+alias cdbase='cd /c/github/mm-rbase'
+alias cdshiny='cd /c/github/mm-shiny'
+
+
+########################
+# Docker ###
+########################
+alias dme="eval \$(docker-machine env)"

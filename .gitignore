@@ -3,6 +3,10 @@
 .git-credential-cache/
 
 
+# amazon web services
+.aws
+
+
 #zsh
 *~
 .*~
@@ -74,3 +78,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.Rproj.user
+.vim/.netrwhist
+*.Rhistory
+shiny/LendingClub/data/database.sqlite
+*.xlsx
+shiny/LendingClub/data/lending-club-loan-data.zip
+shiny/LendingClub/data/loan.csv
+shiny/LendingClub/www/lc.jpg
+*.sqlite
+shiny/lc/data/loan.csv
+*.RData
+*.zip
