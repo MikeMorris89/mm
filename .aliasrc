@@ -29,7 +29,7 @@ alias db="docker build"
 alias dp="docker ps"
 alias dpa="docker ps -a"
 alias de="docker exec"
-
+alias drs="docker ps -aq | xargs docker start"
 
 
 #######################

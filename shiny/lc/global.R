@@ -12,6 +12,11 @@ library(shinyjs)
 library(shinydashboard)
 library(plotly)
 
+import.data<-function(){
+  load("./data/rfcf.R",envir = .GlobalEnv)
+  
+}
+
 loadinglogo<-function(href,src,loadingsrc,height=NULL,width=NULL,alt=NULL){
   tagList(
     tags$head(
