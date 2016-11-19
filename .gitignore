@@ -6,6 +6,8 @@
 # amazon web services
 .aws
 
+# rdata
+shiny/lc/data/*
 
 #zsh
 *~

@@ -14,7 +14,7 @@ alias ct='~/cmd/clear-tmp'
 alias cdgithub='cd /c/github'
 alias cdbase='cd /c/github/mm-rbase'
 alias cdshiny='cd /c/github/mm-shiny'
-
+alias cdstudio='cd /c/github/mm-rstudio'
 
 ########################
 # Docker ###

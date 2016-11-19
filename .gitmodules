@@ -1,0 +1,6 @@
+[submodule "ShinyBuilder"]
+	path = ShinyBuilder
+	url = https://github.com/iheartradio/ShinyBuilder.git
+[submodule "shinyproxy"]
+	path = shinyproxy
+	url = https://github.com/openanalytics/shinyproxy.git
