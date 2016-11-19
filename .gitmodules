@@ -4,3 +4,12 @@
 [submodule "shinyproxy"]
 	path = shinyproxy
 	url = https://github.com/openanalytics/shinyproxy.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+	ignore = dirty
+	ignore = untracked
+
+[submodule "/home/ubuntu/.oh-my-zsh"]
+	path = /home/ubuntu/.oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
