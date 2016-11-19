@@ -1,0 +1,8 @@
+#!/bin/bash	
+cp /lib/systemd/system/docker.service docker.service.orig
+
+new="ExecStart=\\\/usr\\\/bin\\\/docker daemon -H fd:\\\/\\\/ -D -H tcp:\\\/\\\/0.0.0.0:2375"
+orig="ExecStart=\\\/usr\\\/bin\\\/dockerd -H fd:\\\/\\\/"
+
+
+sed -i 's/$orig/$new/g' /lib/systemd/system/docker.service 

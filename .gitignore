@@ -1,3 +1,7 @@
+
+# or
+.oracle*
+
 # maven
 .m2/*
 
