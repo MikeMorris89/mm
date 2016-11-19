@@ -1,0 +1,3 @@
+#!/bin/bash	
+
+java -jar shinyproxy-0.7.5.jar 
