@@ -1,10 +1,29 @@
 
+
+# python related
+.cache/
+.ipython/
+**/.ipynb_checkpoints
+
+*.tar.gz
+*.deb
+
 #git
 .git-credential-cache/
 
 
 # amazon web services
 .aws
+.gnupg
+.lesshst
+.npm/*
+.sudo_as_admin_successful
+*~
+*.cache
+*.bash*
+*.profile
+*.viminfo
+*.sudo_as_admin_successful
 
 # rdata
 shiny/lc/data/*
@@ -20,7 +39,7 @@ shiny/lc/data/*
 .bash_history
 .viminfo
 bin
-.vim/bundle
+#.vim/bundle
 
 #keys
 .ssh
@@ -92,3 +111,8 @@ shiny/LendingClub/www/lc.jpg
 shiny/lc/data/loan.csv
 *.RData
 *.zip
+
+
+#donot ignore
+!.oh-my-zsh/themes/babun.zsh-theme
+

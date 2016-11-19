@@ -10,6 +10,6 @@
 	ignore = dirty
 	ignore = untracked
 
-[submodule "/home/ubuntu/.oh-my-zsh"]
-	path = /home/ubuntu/.oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git

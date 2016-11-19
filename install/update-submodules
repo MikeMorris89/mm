@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd ~/
+
+printf "\nshow submodules in repo\n"
+git submodule
+
+printf "\nclone submodule if it doesn't exist\n"
+git submodule init
+
+printf "\nfetch new version of the repo\n"
+git submodule update --recursive
+
