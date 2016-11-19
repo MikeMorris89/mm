@@ -1,0 +1,13 @@
+#!/bin/bash	
+
+~/install/update-submodules
+
+cd ~/shinyproxy
+
+mvn -U clean install
+
+mv /home/ubuntu/shinyproxy/target/shinyproxy-*.jar ~/shinyproxy-local/
+
+cd ~/shinyproxy-local
+
+chmod 700 shinyproxy-*.jar

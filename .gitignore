@@ -52,7 +52,7 @@ bin
 ####################################################################
 #docker folder. this file structure is for github repos and automaited docker builds
 ####################################################################
-docker/
+docker-automated-builds/sbdr/*
 
 ####################################################################
 #windows defaults from github
