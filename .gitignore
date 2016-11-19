@@ -1,4 +1,5 @@
-
+# maven
+.m2/*
 
 # python related
 .cache/

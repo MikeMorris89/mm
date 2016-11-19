@@ -33,7 +33,9 @@ alias cdstudio='cd /c/github/mm-rstudio'
 ########################
 # Docker ###
 ########################
+alias dmel="eval \$(docker env)"
 alias dme="eval \$(docker-machine env)"
+alias dst="docker start "
 alias dst="docker start "
 alias dssh="docker-machine ssh default "
 alias di="docker images"
