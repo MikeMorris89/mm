@@ -1,4 +1,7 @@
 
+#nohup
+shinyproxy-local/nohup.out
+
 # or
 .oracle*
 

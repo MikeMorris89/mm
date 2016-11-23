@@ -1,32 +1,44 @@
-hiny:
+shiny:
   proxy:
-    #title: Cloud Morris - Data Visualization using Shiny and AWS
-    title: tst
-    logo-url: http://www.openanalytics.eu/sites/www.openanalytics.eu/themes/oa/logo.png
-    #logo-url: https://goo.gl/photos/d4jHJVwsU6fPn4cMA
+    title: Cloud Morris - Data Visualization using Shiny and AWS
+    #title: tst
+    logo-url: https://lh3.googleusercontent.com/-pNx_tnWyziE/WDHFwB0lYPI/AAAAAAAAgLQ/9sjBtXOkkUghGICU1Loj106SQb8atfVyACJoC/w346-h265/mm.png
+    #logo-url: http://www.openanalytics.eu/sites/www.openanalytics.eu/themes/oa/logo.png
     landing-page: /
     heartbeat-rate: 10000
     heartbeat-timeout: 60000
     port: 8080
-    authentication: none
+    authentication: simple
     admin-groups: admins
-    # Simple auth configuration
-    #    users:
-    #    - name: jack
-    #      password: password
-    #      groups: scientists
-    #    - name: jeff
-    #      password: password
-    #      groups: mathematicians
-    #    # LDAP configuration
-    #    ldap:
-    #      url: ldap://ldap.forumsys.com:389/dc=example,dc=com
-    #      user-dn-pattern: uid={0}
-    #      group-search-base:
-    #      group-search-filter: (uniqueMember={0})
-    #      manager-dn: cn=read-only-admin,dc=example,dc=com
-    #      manager-password: password
-    #    # Docker configuration
+    #Simple auth configuration
+    users:
+     - name: rachael
+       password: morris
+       groups: users, admins
+     - name: rhonda
+       password: morris
+       groups: users, admins
+     - name: jason
+       password: rich
+       groups: users, admins
+     - name: cam 
+       password: miller
+       groups: users, admins
+     - name: gram 
+       password: miller
+       groups: users, admins
+     - name: adam
+       password: tessone
+       groups: users, admins
+     - name: louie
+       password: menard
+       groups: admins, users 
+     - name: jeff 
+       password: snyder
+       groups: admins, users 
+     - name: mike
+       password: morris
+       groups: admins, users 
     docker:
       cert-path: /home/none
       url: http://localhost:2375
@@ -34,23 +46,29 @@ hiny:
       port-range-start: 20000
   apps:
   - name: 01_hello
-    display-name: Hello Application
+    display-name: DEMO ~ Hello Application
     description: Application which demonstrates the basics of a Shiny app
     docker-cmd: ["R", "-e shinyproxy::run_01_hello()"]
     docker-image: openanalytics/shinyproxy-demo
+    groups: admins, users
+  - name: 02_Euler 
+    display-name: DEMO ~ Euler's e in arbitrary precision
+    description:  The number e is an important mathematical constant that is the base of the natural logarithm. It is approximately equal to 2.71828, and is the limit of (1 + 1/n)n as n approaches infinity, an expression that arises in the study of compound interest. It can also be calculated as the sum of the infinite series.
+    docker-cmd: ["R", "-e shiny::runApp('/root/euler')"] 
+    docker-image: temp
     groups: users, admins
-  - name: 06_tabsets
-    display-name: Tab Application 
-    description: Application which demonstrates the basics of a Shiny app
+  - name: 06_tabset
+    display-name: DEMO ~ Tab Application 
+    description: Application which demonstrates the basics of a Shiny app. The content displays basic probability distributions(a mathematical description of a random phenomenon in terms of the probabilities of events) and the code used to run the application.
     docker-cmd: ["R", "-e shinyproxy::run_06_tabsets()"]
-    docker-image: openanalytics/shinyproxy-demo
+    docker-image: openanalytics/shinyproxy-demo 
     groups: users, admins
-    #  - name: make_your_own 
-    #    display-name: Make your own dash
-    #    description: Application which dynamic creates dashboards on the fly
-    #    docker-cmd: ["R", "deployShinyBuilder(dir = '/srv/shiny-server/ShinyBuilder')"]
-    #    docker-image: mikemorris89/sbdr
-    #    groups: users, admins
+  - name: make_your_own 
+    display-name: Make your own dash
+    description: Application which dynamic creates dashboards on the fly
+    docker-cmd:   ["R", "-e ShinyBuilder::runShinyBuilder()"]
+    docker-image: mikemorris89/sbdr
+    groups: users, admins
 logging:
   file:
     shinyproxy.log
