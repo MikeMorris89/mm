@@ -5,8 +5,8 @@ shiny:
     logo-url: https://lh3.googleusercontent.com/-pNx_tnWyziE/WDHFwB0lYPI/AAAAAAAAgLQ/9sjBtXOkkUghGICU1Loj106SQb8atfVyACJoC/w346-h265/mm.png
     #logo-url: http://www.openanalytics.eu/sites/www.openanalytics.eu/themes/oa/logo.png
     landing-page: /
-    heartbeat-rate: 10000
-    heartbeat-timeout: 60000
+    heartbeat-rate: 80000
+    heartbeat-timeout: 200000
     port: 8080
     authentication: simple
     admin-groups: admins
@@ -66,7 +66,7 @@ shiny:
   - name: make_your_own 
     display-name: Make your own dash
     description: Application which dynamic creates dashboards on the fly
-    docker-cmd:   ["R", "-e ShinyBuilder::runShinyBuilder()"]
+    docker-cmd:   ["R", "-e shiny::runApp('/root/sb')"]
     docker-image: mikemorris89/sbdr
     groups: users, admins
 logging:
