@@ -20,3 +20,6 @@
 [submodule "shinyproxy-mm"]
 	path = shinyproxy-mm
 	url = https://github.com/MikeMorris89/shinyproxy-mm
+[submodule "sp"]
+	path = sp
+	url = https://github.com/MikeMorris89/sp.git

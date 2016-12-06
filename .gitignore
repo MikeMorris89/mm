@@ -1,4 +1,4 @@
-
+.influx_history
 #nohup
 shinyproxy-local/nohup.out
 

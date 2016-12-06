@@ -8,6 +8,8 @@ shiny:
     heartbeat-rate: 80000
     heartbeat-timeout: 200000
     port: 8080
+    usage-stats-url: http://localhost:8086
+    usage-stats-db: shinyproxy_usagestats
     authentication: simple
     admin-groups: admins
     #Simple auth configuration
@@ -45,29 +47,85 @@ shiny:
       host: 127.0.0.1
       port-range-start: 20000
   apps:
+  - name: make_your_own 
+    display-name: Shiny Dash Builder
+    previewurl: /img/Analytics-Dashboard-700x300.jpg 
+    subheading: Visual dashboard builder platform based on R/Shiny
+    description: ShinyBuilder is a point-and-click dashboard platform based on R/Shiny which makes it simple to create and share live, connected dashboards. Project forked from ShinyBuilder developed by iheartradios data science team.
+    docker-cmd:   ["R", "-e shiny::runApp('/root/sb')"]
+    docker-image: mikemorris89/sbdr
+    groups: users, admins
+  - name: kml 
+    subheading: Machine learning in R
+    display-name: Kaggle Machine Learning using R
+    description: This dashboard displays the results of various machine learning and predictive modeling packages in R. If you're new to data science and machine learning, or looking for a simple intro to the Kaggle competitions platform, this is the best place to start. 
+    docker-cmd: ["R", "-e shiny::runApp('/root/kml')"]
+    docker-image: mikemorris89/kmldr
+    previewurl: /img/ml.png
+    groups: admins, users
+  - name: gvwb
+    subheading: Demo
+    display-name: Google Visualization Data in Motion
+    description: The best known google chart is probably the Motion Chart, popularised by Hans Rosling in his TED talks.
+    docker-cmd: ["R", "-e shiny::runApp('/root/gv/WorldBank')"]
+    docker-image: mikemorris89/gvdr
+    previewurl: /img/kml.gif
+    groups: admins, users  
+  - name: gvevent 
+    subheading: Demo
+    display-name: Google Visualization Event listeners
+    description: The googleVis package provides an interface between R and the Google Charts API. Google Charts offer interactive charts which can be embedded into web pages. 
+    docker-cmd: ["R", "-e shiny::runApp('/root/gv/EventListener')"]
+    docker-image: mikemorris89/gvdr
+    previewurl: /img/gv.jpg
+    groups: admins, users
+  - name: gvroles
+    subheading: Demo
+    display-name: Google Visualization Roles
+    description: The googleVis package provides an interface between R and the Google Charts API. Google Charts offer interactive charts which can be embedded into web pages
+    docker-cmd: ["R", "-e shiny::runApp('/root/gv/Roles')"]
+    docker-image: mikemorris89/gvdr
+    previewurl: /img/gv2.png
+    groups: admins, users
+  - name: gvtrend
+    subheading: Demo
+    display-name: Google Visualization Trendlines
+    description: The functions of the googleVis package allow the user to visualise data stored in R data frames with Google Charts without uploading the data to google. The output of a googleVis function is HTML code that contains the data and references to JavaScript functions hosted by Google.
+    docker-cmd: ["R", "-e shiny::runApp('/root/gv/Trendlines')"]
+    docker-image: mikemorris89/gvdr
+    previewurl: /img/g3.jpg
+    groups: admins, users
   - name: 01_hello
-    display-name: DEMO ~ Hello Application
+    subheading: Demo
+    display-name: Hello Application
     description: Application which demonstrates the basics of a Shiny app
     docker-cmd: ["R", "-e shinyproxy::run_01_hello()"]
     docker-image: openanalytics/shinyproxy-demo
+    previewurl: /img/hello_world.gif
     groups: admins, users
   - name: 02_Euler 
-    display-name: DEMO ~ Euler's e in arbitrary precision
+    display-name: Euler's e in arbitrary precision
+    subheading: Demo
+    previewurl: /img/eulermug.png
     description:  The number e is an important mathematical constant that is the base of the natural logarithm. It is approximately equal to 2.71828, and is the limit of (1 + 1/n)n as n approaches infinity, an expression that arises in the study of compound interest. It can also be calculated as the sum of the infinite series.
     docker-cmd: ["R", "-e shiny::runApp('/root/euler')"] 
     docker-image: temp
     groups: users, admins
+  - name: Spanish_prob 
+    display-name: Spanish Dash Application
+    previewurl: /img/g4.jpg 
+    subheading: Demo
+    description:  Structure of default probabilities at maturities. Project demonstrates how to filter tables based on sections in a graph. Original project https://github.com/mrzork/shinyproxy-template.git
+    docker-cmd: ["R", "-e shiny::runApp('/root/dash')"]
+    docker-image: temp 
+    groups: users, admins
   - name: 06_tabset
-    display-name: DEMO ~ Tab Application 
+    display-name: Tab Application
+    previewurl: /img/Responsive-Pure-CSS-Tabs.png 
+    subheading: Demo 
     description: Application which demonstrates the basics of a Shiny app. The content displays basic probability distributions(a mathematical description of a random phenomenon in terms of the probabilities of events) and the code used to run the application.
     docker-cmd: ["R", "-e shinyproxy::run_06_tabsets()"]
     docker-image: openanalytics/shinyproxy-demo 
-    groups: users, admins
-  - name: make_your_own 
-    display-name: Make your own dash
-    description: Application which dynamic creates dashboards on the fly
-    docker-cmd:   ["R", "-e shiny::runApp('/root/sb')"]
-    docker-image: mikemorris89/sbdr
     groups: users, admins
 logging:
   file:
