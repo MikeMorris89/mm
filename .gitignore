@@ -2,6 +2,35 @@
 #nohup
 shinyproxy-local/nohup.out
 
+
+.AndroidStudio**
+Android/
+.android/
+
+.rstudio**
+
+.mozilla**
+
+.local**
+
+.kde**
+.config**
+
+.emacs**
+
+.ICEauthority
+
+.esd_auth
+
+*.swp
+
+.java/**
+.subversion/
+*.log
+*.bin
+
+
+
 # or
 .oracle*
 
@@ -123,4 +152,4 @@ shiny/lc/data/loan.csv
 
 #donot ignore
 !.oh-my-zsh/themes/babun.zsh-theme
-
+/mm/
