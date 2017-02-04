@@ -85,6 +85,7 @@ shiny/lc/data/*
 .zcompdump*
 .zsh_history
 .zsh-update
+/.oh-my-zsh/
 
 #bash vim
 .bash_history
