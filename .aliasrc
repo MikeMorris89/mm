@@ -16,6 +16,15 @@ zshcolor2() {
 	zsh
 }
 
+#remote="remote"
+#if ["$SESSION_TYPE" != "$remote" ]; then
+# ZSH_THEME=babun
+# zshcolor1
+#else
+# ZSH_THEME=babun
+# zshcolor2
+#fi
+
 #git
 gall() {
 	gaa && gcmsg "$@" && gl && gp
