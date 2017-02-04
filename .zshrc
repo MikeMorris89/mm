@@ -83,8 +83,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-setxkbmap -option ctrl:nocaps
-
+echo "sess = $SESSION_TYPE"
+b="remote"
+if [ "$SESSION_TYPE" != "$b" ]; then
+ echo "set caps to ctrl"
+ setxkbmap -option ctrl:nocaps
+fi
+echo "if finished"
 
 
 source .aliasrc

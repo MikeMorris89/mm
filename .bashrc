@@ -1,5 +1,8 @@
 # .bashrc
 
+# Source session type
+source ./cmd/set-session-type.sh
+
 # Source global definitions
 #if [ -f /etc/bashrc ]; then
 #	. /etc/bashrc
