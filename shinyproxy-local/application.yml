@@ -10,7 +10,7 @@ shiny:
     port: 8080
     usage-stats-url: http://localhost:8086
     usage-stats-db: shinyproxy_usagestats
-    authentication: simple
+    authentication: None 
     admin-groups: admins
     #Simple auth configuration
     users:
