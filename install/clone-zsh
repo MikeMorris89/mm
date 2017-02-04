@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm -rf ~/.oh-my-zsh
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-wget https://raw.githubusercontent.com/babun/babun/master/babun-core/plugins/oh-my-zsh/src/babun.zsh-theme -O ~/.oh-my-zsh/themes/babun.zsh-theme
+rm -rf $HOME/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+wget https://raw.githubusercontent.com/babun/babun/master/babun-core/plugins/oh-my-zsh/src/babun.zsh-theme -O $HOME/.oh-my-zsh/themes/babun.zsh-theme

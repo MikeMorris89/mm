@@ -2,12 +2,12 @@
 
 #colors
 zshcolor1() {
-	wget https://raw.githubusercontent.com/babun/babun/master/babun-core/plugins/oh-my-zsh/src/babun.zsh-theme -O ~/.oh-my-zsh/themes/babun.zsh-theme
+	wget https://raw.githubusercontent.com/babun/babun/master/babun-core/plugins/oh-my-zsh/src/babun.zsh-theme -O $HOME/.oh-my-zsh/themes/babun.zsh-theme
  
 	zsh
 }
 zshcolor2() {
-	wget https://raw.githubusercontent.com/babun/babun/master/babun-core/plugins/oh-my-zsh/src/babun.zsh-theme -O ~/.oh-my-zsh/themes/babun.zsh-theme
+	wget https://raw.githubusercontent.com/babun/babun/master/babun-core/plugins/oh-my-zsh/src/babun.zsh-theme -O $HOME/.oh-my-zsh/themes/babun.zsh-theme
  
        	sed -i 's/red/magenta/g' ~/.oh-my-zsh/themes/babun.zsh-theme 
        	sed -i 's/green/cyan/g' ~/.oh-my-zsh/themes/babun.zsh-theme
