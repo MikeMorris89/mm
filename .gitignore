@@ -4,30 +4,44 @@ shinyproxy-local/nohup.out
 
 
 .AndroidStudio**
-Android/
+/Android/
 .android/
-
 .rstudio**
-
 .mozilla**
-
 .local**
-
 .kde**
 .config**
-
 .emacs**
-
 .ICEauthority
-
 .esd_auth
-
 *.swp
-
 .java/**
 .subversion/
 *.log
 *.bin
+libevent**
+.pki/**
+.bluefish
+.gnome
+.conda
+.anaconda
+.Xauthority
+.ftk/
+.jupyter
+.vimbundle
+.vnc
+.zenmap
+/Downloads/
+/R/
+/Untitled Folder/
+/.ftk/
+/anaconda3/
+/docker-automated-builds/kml/
+/docker-automated-builds/kmldr/
+/nmap/
+vnctemp
+/Documents/
+
 
 
 
@@ -153,3 +167,7 @@ shiny/lc/data/loan.csv
 #donot ignore
 !.oh-my-zsh/themes/babun.zsh-theme
 /mm/
+/.vim/bundle/Dockerfile.vim/
+/.vim/bundle/Vundle.vim/
+/Anaconda3-4.0.0-Linux-x86_64.sh
+/.fltk/fltk.org/fltk.prefs

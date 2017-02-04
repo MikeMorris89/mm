@@ -12,9 +12,6 @@
 [submodule "shinyproxy-template"]
 	path = shinyproxy-template
 	url = https://github.com/openanalytics/shinyproxy-template.git
-[submodule ".vim/bundle/Dockerfile.vim"]
-	path = ~/.vim/bundle/Vundle.vim
-	url = https://github.com/VundleVim/Vundle.vim.git 
 
 
 [submodule "shinyproxy-mm"]
