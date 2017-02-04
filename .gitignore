@@ -90,7 +90,7 @@ shiny/lc/data/*
 .bash_history
 .viminfo
 bin
-#.vim/bundle
+/.vim/
 
 #keys
 .ssh
