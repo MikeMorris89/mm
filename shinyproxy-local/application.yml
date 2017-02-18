@@ -55,6 +55,14 @@ shiny:
     docker-cmd:   ["R", "-e shiny::runApp('/root/sb')"]
     docker-image: mikemorris89/sbdr
     groups: users, admins
+  - name: make_your_own_pvt 
+    display-name: Shiny Pivot Tables
+    previewurl: /img/graphprints.jpg 
+    subheading: Simple pivot tables for quickly viewing CSV, TSV, XLS files 
+    description: The rpivotTable package is an R htmlwidget built around the pivottable library.rpivottable was written by Enzo Martoglio and others mentioned here https://cran.r-project.org/web/packages/rpivotTable/rpivotTable.pdf.PivotTable.js is a Javascript Pivot Table library with drag'n'drop functionality built on top of jQuery/jQueryUI and written in CoffeeScript by Nicolas Kruchten at Datacratic. Both are available under an MIT license. 
+    docker-cmd:   ["R", "-e shiny::runApp('/root/rpvt')"]
+    docker-image: mikemorris89/rpvtdr
+    groups: users, admins
   - name: kml 
     subheading: Machine learning in R
     display-name: Kaggle Machine Learning using R
