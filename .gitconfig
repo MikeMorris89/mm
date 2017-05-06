@@ -26,6 +26,5 @@
 	unstage = reset HEAD --
 	dc = diff --cached
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
-[user]
-	email = mike.morris89@gmail.com
-	name = mikemorris89
+[github]
+	user = mikemorris89
