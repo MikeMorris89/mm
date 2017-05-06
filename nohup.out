@@ -1,0 +1,152 @@
+Error: Unable to access jarfile shinyproxy-0.7.5.jar.sp
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2017-02-11 22:59:47.932  INFO 1511 --- [           main] eu.openanalytics.ShinyProxyApplication   : Starting ShinyProxyApplication v0.7.5 on ip-172-31-16-196 with PID 1511 (/home/ubuntu/shinyproxy-local/shinyproxy-0.7.5.jar.sp started by ubuntu in /home/ubuntu)
+2017-02-11 22:59:47.939  INFO 1511 --- [           main] eu.openanalytics.ShinyProxyApplication   : The following profiles are active: demo
+2017-02-11 22:59:48.388  INFO 1511 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56f48fd1: startup date [Sat Feb 11 22:59:48 UTC 2017]; root of context hierarchy
+2017-02-11 22:59:50.490  INFO 1511 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-02-11 22:59:50.594  INFO 1511 --- [           main] o.s.s.a.AsyncAnnotationBeanPostProcessor : No TaskExecutor bean found for async annotation processing.
+2017-02-11 22:59:52.269  INFO 1511 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2017-02-11 22:59:52.311  INFO 1511 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2017-02-11 22:59:52.527  WARN 1511 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-02-11 22:59:52.527  WARN 1511 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-02-11 22:59:52.599  INFO 1511 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2017-02-11 22:59:52.600  INFO 1511 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4217 ms
+2017-02-11 22:59:53.351  INFO 1511 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-02-11 22:59:53.353  INFO 1511 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-02-11 22:59:53.353  INFO 1511 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-02-11 22:59:53.353  INFO 1511 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-02-11 22:59:53.354  INFO 1511 --- [           main] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-02-11 22:59:53.356  INFO 1511 --- [           main] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-02-11 22:59:53.539  INFO 1511 --- [           main] e.o.components.UsageStatsCollector       : Disabled. Usage statistics will not be posted.
+2017-02-11 22:59:53.972  INFO 1511 --- [           main] s.s.l.DefaultSpringSecurityContextSource :  URL 'ldap://ldap.forumsys.com:389/dc=example,dc=com', root DN is 'dc=example,dc=com'
+2017-02-11 22:59:53.994  INFO 1511 --- [           main] .s.s.l.u.DefaultLdapAuthoritiesPopulator : groupSearchBase is empty. Searches will be performed from the context source base
+2017-02-11 22:59:54.235  INFO 1511 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2017-02-11 22:59:54.236  INFO 1511 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2017-02-11 22:59:54.420  INFO 1511 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b2edbb, org.springframework.security.web.context.SecurityContextPersistenceFilter@1064d9ab, org.springframework.security.web.header.HeaderWriterFilter@70b52065, org.springframework.security.web.authentication.logout.LogoutFilter@6a051753, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77222d04, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24096f4f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6542d73c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30fa8dc6, org.springframework.security.web.session.SessionManagementFilter@75a2468e, org.springframework.security.web.access.ExceptionTranslationFilter@221a952d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a0a1643]
+2017-02-11 22:59:54.685  INFO 1511 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56f48fd1: startup date [Sat Feb 11 22:59:48 UTC 2017]; root of context hierarchy
+2017-02-11 22:59:54.804  INFO 1511 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String eu.openanalytics.controllers.IndexController.index(org.springframework.ui.ModelMap,java.security.Principal)
+2017-02-11 22:59:54.805  INFO 1511 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String eu.openanalytics.controllers.LoginController.getLoginPage(java.util.Optional<java.lang.String>,org.springframework.ui.ModelMap)
+2017-02-11 22:59:54.805  INFO 1511 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app/*]}" onto java.lang.String eu.openanalytics.controllers.AppController.app(org.springframework.ui.ModelMap,java.security.Principal,javax.servlet.http.HttpServletRequest)
+2017-02-11 22:59:54.806  INFO 1511 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/heartbeat/**]}" onto void eu.openanalytics.controllers.HeartbeatController.heartbeat(java.security.Principal,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-11 22:59:54.810  INFO 1511 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin]}" onto java.lang.String eu.openanalytics.controllers.AdminController.admin(org.springframework.ui.ModelMap,java.security.Principal,javax.servlet.http.HttpServletRequest)
+2017-02-11 22:59:54.811  INFO 1511 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto java.lang.String eu.openanalytics.controllers.ErrorController.handleError(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-11 22:59:54.899  INFO 1511 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-11 22:59:54.899  INFO 1511 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-11 22:59:54.992  INFO 1511 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-11 22:59:56.126  INFO 1511 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-11 22:59:56.254  INFO 1511 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8080 (http)
+2017-02-11 22:59:56.262  INFO 1511 --- [           main] eu.openanalytics.ShinyProxyApplication   : Started ShinyProxyApplication in 9.597 seconds (JVM running for 10.561)
+2017-02-11 22:59:59.375  INFO 1511 --- [  XNIO-2 task-2] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-02-11 22:59:59.377  INFO 1511 --- [  XNIO-2 task-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-02-11 22:59:59.411  INFO 1511 --- [  XNIO-2 task-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2017-02-11 23:00:18.328  INFO 1511 --- [ XNIO-2 task-14] eu.openanalytics.services.UserService    : Authentication failure [user: mike] [error: Bad credentials]
+2017-02-11 23:00:26.296  INFO 1511 --- [  XNIO-2 task-5] eu.openanalytics.services.UserService    : Authentication failure [user: mike] [error: Bad credentials]
+2017-02-11 23:00:47.645  INFO 1511 --- [       Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56f48fd1: startup date [Sat Feb 11 22:59:48 UTC 2017]; root of context hierarchy
+2017-02-11 23:00:47.651  INFO 1511 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-02-11 23:00:47.661  INFO 1511 --- [       Thread-3] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2017-03-15 02:53:03.992  INFO 1734 --- [           main] eu.openanalytics.ShinyProxyApplication   : Starting ShinyProxyApplication v0.7.5 on ip-172-31-16-196 with PID 1734 (/home/ubuntu/shinyproxy-local/shinyproxy-0.7.5.jar started by ubuntu in /home/ubuntu)
+2017-03-15 02:53:04.000  INFO 1734 --- [           main] eu.openanalytics.ShinyProxyApplication   : The following profiles are active: demo
+2017-03-15 02:53:04.522  INFO 1734 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56f48fd1: startup date [Wed Mar 15 02:53:04 UTC 2017]; root of context hierarchy
+2017-03-15 02:53:06.658  INFO 1734 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-03-15 02:53:06.770  INFO 1734 --- [           main] o.s.s.a.AsyncAnnotationBeanPostProcessor : No TaskExecutor bean found for async annotation processing.
+2017-03-15 02:53:08.351  INFO 1734 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2017-03-15 02:53:08.387  INFO 1734 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2017-03-15 02:53:08.617  WARN 1734 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-03-15 02:53:08.617  WARN 1734 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-03-15 02:53:08.700  INFO 1734 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2017-03-15 02:53:08.701  INFO 1734 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4194 ms
+2017-03-15 02:53:09.581  INFO 1734 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-15 02:53:09.588  INFO 1734 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-15 02:53:09.590  INFO 1734 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-15 02:53:09.590  INFO 1734 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-15 02:53:09.591  INFO 1734 --- [           main] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-15 02:53:09.595  INFO 1734 --- [           main] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-15 02:53:09.957  INFO 1734 --- [           main] e.o.components.UsageStatsCollector       : Disabled. Usage statistics will not be posted.
+2017-03-15 02:53:10.177  INFO 1734 --- [           main] s.s.l.DefaultSpringSecurityContextSource :  URL 'ldap://ldap.forumsys.com:389/dc=example,dc=com', root DN is 'dc=example,dc=com'
+2017-03-15 02:53:10.212  INFO 1734 --- [           main] .s.s.l.u.DefaultLdapAuthoritiesPopulator : groupSearchBase is empty. Searches will be performed from the context source base
+2017-03-15 02:53:10.446  INFO 1734 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-15 02:53:10.450  INFO 1734 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2017-03-15 02:53:10.652  INFO 1734 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30fa8dc6, org.springframework.security.web.context.SecurityContextPersistenceFilter@77957b1f, org.springframework.security.web.header.HeaderWriterFilter@6feadf9b, org.springframework.security.web.authentication.logout.LogoutFilter@190dd618, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@115fc14b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53dde56d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39d30508, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1823283e, org.springframework.security.web.session.SessionManagementFilter@70a46d77, org.springframework.security.web.access.ExceptionTranslationFilter@680ef9d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dcb86fd]
+2017-03-15 02:53:10.941  INFO 1734 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56f48fd1: startup date [Wed Mar 15 02:53:04 UTC 2017]; root of context hierarchy
+2017-03-15 02:53:11.064  INFO 1734 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app/*]}" onto java.lang.String eu.openanalytics.controllers.AppController.app(org.springframework.ui.ModelMap,java.security.Principal,javax.servlet.http.HttpServletRequest)
+2017-03-15 02:53:11.065  INFO 1734 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto java.lang.String eu.openanalytics.controllers.ErrorController.handleError(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-15 02:53:11.066  INFO 1734 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String eu.openanalytics.controllers.IndexController.index(org.springframework.ui.ModelMap,java.security.Principal)
+2017-03-15 02:53:11.070  INFO 1734 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/heartbeat/**]}" onto void eu.openanalytics.controllers.HeartbeatController.heartbeat(java.security.Principal,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-15 02:53:11.070  INFO 1734 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String eu.openanalytics.controllers.LoginController.getLoginPage(java.util.Optional<java.lang.String>,org.springframework.ui.ModelMap)
+2017-03-15 02:53:11.071  INFO 1734 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin]}" onto java.lang.String eu.openanalytics.controllers.AdminController.admin(org.springframework.ui.ModelMap,java.security.Principal,javax.servlet.http.HttpServletRequest)
+2017-03-15 02:53:11.163  INFO 1734 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-15 02:53:11.165  INFO 1734 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-15 02:53:11.270  INFO 1734 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-15 02:53:12.412  INFO 1734 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-15 02:53:12.557  INFO 1734 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8080 (http)
+2017-03-15 02:53:12.566  INFO 1734 --- [           main] eu.openanalytics.ShinyProxyApplication   : Started ShinyProxyApplication in 9.745 seconds (JVM running for 11.477)
+2017-03-15 02:53:24.319  INFO 1734 --- [       Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56f48fd1: startup date [Wed Mar 15 02:53:04 UTC 2017]; root of context hierarchy
+2017-03-15 02:53:24.335  INFO 1734 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2017-03-15 02:53:50.212  INFO 1770 --- [           main] eu.openanalytics.ShinyProxyApplication   : Starting ShinyProxyApplication v0.7.5 on ip-172-31-16-196 with PID 1770 (/home/ubuntu/shinyproxy-local/shinyproxy-0.7.5.jar started by ubuntu in /home/ubuntu)
+2017-03-15 02:53:50.218  INFO 1770 --- [           main] eu.openanalytics.ShinyProxyApplication   : The following profiles are active: demo
+2017-03-15 02:53:50.682  INFO 1770 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56f48fd1: startup date [Wed Mar 15 02:53:50 UTC 2017]; root of context hierarchy
+2017-03-15 02:53:52.778  INFO 1770 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-03-15 02:53:52.882  INFO 1770 --- [           main] o.s.s.a.AsyncAnnotationBeanPostProcessor : No TaskExecutor bean found for async annotation processing.
+2017-03-15 02:53:54.337  INFO 1770 --- [           main] org.xnio                                 : XNIO version 3.3.6.Final
+2017-03-15 02:53:54.367  INFO 1770 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2017-03-15 02:53:54.517  WARN 1770 --- [           main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-03-15 02:53:54.518  WARN 1770 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-03-15 02:53:54.591  INFO 1770 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2017-03-15 02:53:54.598  INFO 1770 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3923 ms
+2017-03-15 02:53:55.377  INFO 1770 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-15 02:53:55.386  INFO 1770 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-15 02:53:55.388  INFO 1770 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-15 02:53:55.388  INFO 1770 --- [           main] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-15 02:53:55.388  INFO 1770 --- [           main] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-15 02:53:55.390  INFO 1770 --- [           main] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-15 02:53:55.880  INFO 1770 --- [           main] e.o.components.UsageStatsCollector       : Disabled. Usage statistics will not be posted.
+2017-03-15 02:53:56.067  INFO 1770 --- [           main] s.s.l.DefaultSpringSecurityContextSource :  URL 'ldap://ldap.forumsys.com:389/dc=example,dc=com', root DN is 'dc=example,dc=com'
+2017-03-15 02:53:56.102  INFO 1770 --- [           main] .s.s.l.u.DefaultLdapAuthoritiesPopulator : groupSearchBase is empty. Searches will be performed from the context source base
+2017-03-15 02:53:56.308  INFO 1770 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-15 02:53:56.314  INFO 1770 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2017-03-15 02:53:56.494  INFO 1770 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30fa8dc6, org.springframework.security.web.context.SecurityContextPersistenceFilter@77957b1f, org.springframework.security.web.header.HeaderWriterFilter@6feadf9b, org.springframework.security.web.authentication.logout.LogoutFilter@190dd618, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@115fc14b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53dde56d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39d30508, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1823283e, org.springframework.security.web.session.SessionManagementFilter@70a46d77, org.springframework.security.web.access.ExceptionTranslationFilter@680ef9d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dcb86fd]
+2017-03-15 02:53:56.766  INFO 1770 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56f48fd1: startup date [Wed Mar 15 02:53:50 UTC 2017]; root of context hierarchy
+2017-03-15 02:53:56.890  INFO 1770 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app/*]}" onto java.lang.String eu.openanalytics.controllers.AppController.app(org.springframework.ui.ModelMap,java.security.Principal,javax.servlet.http.HttpServletRequest)
+2017-03-15 02:53:56.891  INFO 1770 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto java.lang.String eu.openanalytics.controllers.ErrorController.handleError(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-15 02:53:56.892  INFO 1770 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String eu.openanalytics.controllers.IndexController.index(org.springframework.ui.ModelMap,java.security.Principal)
+2017-03-15 02:53:56.892  INFO 1770 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/heartbeat/**]}" onto void eu.openanalytics.controllers.HeartbeatController.heartbeat(java.security.Principal,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-15 02:53:56.892  INFO 1770 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String eu.openanalytics.controllers.LoginController.getLoginPage(java.util.Optional<java.lang.String>,org.springframework.ui.ModelMap)
+2017-03-15 02:53:56.893  INFO 1770 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin]}" onto java.lang.String eu.openanalytics.controllers.AdminController.admin(org.springframework.ui.ModelMap,java.security.Principal,javax.servlet.http.HttpServletRequest)
+2017-03-15 02:53:56.983  INFO 1770 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-15 02:53:56.984  INFO 1770 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-15 02:53:57.089  INFO 1770 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-15 02:53:58.098  INFO 1770 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-15 02:53:58.213  INFO 1770 --- [           main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8080 (http)
+2017-03-15 02:53:58.217  INFO 1770 --- [           main] eu.openanalytics.ShinyProxyApplication   : Started ShinyProxyApplication in 9.172 seconds (JVM running for 10.054)
+2017-03-15 02:54:29.146  INFO 1770 --- [  XNIO-2 task-2] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-15 02:54:29.148  INFO 1770 --- [  XNIO-2 task-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-15 02:54:29.176  INFO 1770 --- [  XNIO-2 task-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2017-03-15 02:54:35.460  INFO 1770 --- [       Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56f48fd1: startup date [Wed Mar 15 02:53:50 UTC 2017]; root of context hierarchy
+2017-03-15 02:54:35.465  INFO 1770 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-15 02:54:35.473  INFO 1770 --- [       Thread-3] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
