@@ -100,3 +100,34 @@ echo "if finished"
 
 
 source .aliasrc
+export PATH="/home/mike/.linuxbrew/bin:$PATH"
+export MANPATH="/home/mike/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="/home/mike/.linuxbrew/share/info:$INFOPATH"
+export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
+
+# Source session type
+source ./cmd/set-session-type.sh
+
+
+#Source global definitions
+#if [ -f /etc/bashrc ]; then
+#       . /etc/bashrc
+#fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
+#zsh
+ 
+# added by Anaconda2 4.0.0 installer
+export PATH="/home/mike/anaconda3/bin:$PATH"
+#XAutomation Aliases 
+alias Xbing="/home/mike/.XAutomation/Xbing"
+alias Xcode="/home/mike/.XAutomation/Xcode"
+alias Xplay="/home/mike/.XAutomation/Xplay"
+alias Xshop="/home/mike/.XAutomation/Xshop"
+alias Xweb="/home/mike/.XAutomation/Xweb"
+                                                                                                                         
+                                                   
