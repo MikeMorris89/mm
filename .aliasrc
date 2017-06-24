@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # cmd
+alias deepdive="bash <(curl -fsSL git.io/getdeepdive)"
 alias cmd="bash"
+
+
 
 #colors
 zshcolor1() {
@@ -41,6 +44,8 @@ alias cdgithub='cd /c/github'
 alias cdbase='cd /c/github/mm-rbase'
 alias cdshiny='cd /c/github/mm-shiny'
 alias cdstudio='cd /c/github/mm-rstudio'
+alias lg='l | grep '
+
 
 ########################
 # Docker ###
