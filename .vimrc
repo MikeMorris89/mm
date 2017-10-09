@@ -1,9 +1,13 @@
 set number
-
 set spell spelllang=en_us
 setlocal spell spelllang=en_us
 
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 :ab bb #!/bin/bash
+:ab bbr #!/usr/bin/Rscript
 
 filetype indent on
 
@@ -29,7 +33,11 @@ call vundle#begin()
 	" let Vundle manage Vundle, required
 	Plugin 'VundleVim/Vundle.vim'
 	Plugin 'ekalinin/Dockerfile.vim'
-
+	
+	Plugin 'vim-pandoc/vim-pandoc-syntax'
+	Plugin 'vim-pandoc/vim-rmarkdown'
+	Plugin 'Vim-R-plugin'
+	Plugin 'chase/vim-ansible-yaml'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
